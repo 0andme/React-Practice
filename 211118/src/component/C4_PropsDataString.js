@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // 필수 코드
 import PropTypes from "prop-types";
 
-class C4_PropsDataType extends Component {
+class C4_PropsDataString extends Component {
   render() {
     return <div>{this.props.name}</div>;
   }
@@ -13,4 +13,4 @@ C4_PropsDataType.propTypes = {
   name: PropTypes.string,
 };
 
-export default C4_PropsDataType;
+export default C4_PropsDataString;
