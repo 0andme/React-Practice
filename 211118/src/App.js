@@ -6,6 +6,7 @@ import C4_PropsDataString from "./component/C4_PropsDataString";
 import C5_PropsDataTypes from "./component/C5_PropsDataTypes";
 import C6_PropsDataBoolean from "./component/C6_PropsDataBoolean";
 import C7_PropsShape from "./component/C7_PropsShape";
+import C8_PropsShould from "./component/C8_PropsShould";
 function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ function App() {
       <C6_PropsDataBoolean isTrue={false} />
       <C6_PropsDataBoolean isTrue={true} />
       <C7_PropsShape objValue={{ name: "Kim", age: 3 }} />
+      <C8_PropsShould valueName="필수" />
     </div>
   );
 }
