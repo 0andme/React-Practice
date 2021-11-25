@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 function C2_AddClassName() {
   return <div className="sample">C2_AddClassName</div>;
