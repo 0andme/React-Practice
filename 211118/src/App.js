@@ -7,6 +7,8 @@ import C5_PropsDataTypes from "./component/C5_PropsDataTypes";
 import C6_PropsDataBoolean from "./component/C6_PropsDataBoolean";
 import C7_PropsShape from "./component/C7_PropsShape";
 import C8_PropsShould from "./component/C8_PropsShould";
+import C9_PropsDefault from "./component/C9_PropsDefault";
+import C10_PropsNode from "./component/C10_PropsNode";
 function App() {
   return (
     <div>
@@ -27,6 +29,9 @@ function App() {
       <C6_PropsDataBoolean isTrue={true} />
       <C7_PropsShape objValue={{ name: "Kim", age: 3 }} />
       <C8_PropsShould valueName="필수" />
+      <C9_PropsDefault defaultData="data있음" />
+      <C9_PropsDefault />
+      <C10_PropsNode nodeData={<div>nodeData</div>} />
     </div>
   );
 }
