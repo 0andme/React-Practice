@@ -4,6 +4,8 @@ import C2_AddClassName from "./component/C2_AddClassName";
 import C3_PropsData from "./component/C3_PropsData";
 import C4_PropsDataString from "./component/C4_PropsDataString";
 import C5_PropsDataTypes from "./component/C5_PropsDataTypes";
+import C6_PropsDataBoolean from "./component/C6_PropsDataBoolean";
+import C7_PropsShape from "./component/C7_PropsShape";
 function App() {
   return (
     <div>
@@ -20,6 +22,9 @@ function App() {
         nodeValue={<h1>헤더</h1>}
         funcValue={console.log("하하하")}
       />
+      <C6_PropsDataBoolean isTrue={false} />
+      <C6_PropsDataBoolean isTrue={true} />
+      <C7_PropsShape objValue={{ name: "Kim", age: 3 }} />
     </div>
   );
 }
