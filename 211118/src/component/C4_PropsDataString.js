@@ -9,7 +9,7 @@ class C4_PropsDataString extends Component {
   }
 }
 // 자료형 선언
-C4_PropsDataType.propTypes = {
+C4_PropsDataString.propTypes = {
   name: PropTypes.string,
 };
 
