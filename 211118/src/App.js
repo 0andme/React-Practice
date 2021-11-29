@@ -9,6 +9,7 @@ import C7_PropsShape from "./component/C7_PropsShape";
 import C8_PropsShould from "./component/C8_PropsShould";
 import C9_PropsDefault from "./component/C9_PropsDefault";
 import C10_PropsNode from "./component/C10_PropsNode";
+import C11_setState from "./component/C11_setState";
 function App() {
   return (
     <div>
@@ -32,6 +33,7 @@ function App() {
       <C9_PropsDefault defaultData="data있음" />
       <C9_PropsDefault />
       <C10_PropsNode nodeData={<div>nodeData</div>} />
+      <C11_setState />
     </div>
   );
 }
