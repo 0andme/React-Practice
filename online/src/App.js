@@ -4,6 +4,7 @@ import CreateElement from "./component/React.createElement로컴포넌트만들�
 // import FuncProps from "./component/Props&State";
 // import ClassProps from "./component/Props&State";
 import ClassState from "./component/Props&State";
+import EventHandling from "./component/EventHandling";
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       {/* <FuncProps msg={"propsmsg"} /> */}
       {/* <ClassProps msg={"ClassProps"} /> */}
       <ClassState />
+      <EventHandling />
     </div>
   );
 }
