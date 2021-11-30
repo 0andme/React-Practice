@@ -4,10 +4,11 @@ import React, { Component } from "react";
 class ComponentLifecycle16 extends Component {
   render() {
     console.log("render");
-    if (this.state.hasErr) {
-      return <div>{"ERR"}</div>;
-    }
-    return <DataERR />;
+    // if (this.state.hasErr) {
+    //   return <div>{"ERR"}</div>;
+    // }
+    // return <DataERR />;
+    return <span>?</span>;
   }
   // 1.  constructor
   // constructor(props) {

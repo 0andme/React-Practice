@@ -6,7 +6,7 @@ import "./App.css";
 // import ClassState from "./component/Props&State";
 // import EventHandling from "./component/EventHandling";
 // import ComponentLifecycle from "./component/ComponentLifecycle";
-import ComponentLifecycle16 from "./component/ComponentLifecycle16.3";
+// import ComponentLifecycle16 from "./component/ComponentLifecycle16.3";
 function App() {
   return (
     <div className="App">
@@ -16,7 +16,7 @@ function App() {
       {/* <ClassState /> */}
       {/* <EventHandling /> */}
       {/* <ComponentLifecycle name={"이름"} /> */}
-      <ComponentLifecycle16 />
+      {/* <ComponentLifecycle16 /> */}
     </div>
   );
 }
