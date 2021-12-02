@@ -10,6 +10,7 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 // import ComponentLifecycle16 from "./component/ComponentLifecycle16.3";
 import Home from "./component/C3Router/Home";
 import About from "./component/C3Router/About";
+import NotFound from "./component/C3Router/NotFound";
 function App() {
   const id = 30;
   return (
@@ -26,6 +27,7 @@ function App() {
           {/* 동적 라우팅 */}
           <Route path="/home/:id" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
