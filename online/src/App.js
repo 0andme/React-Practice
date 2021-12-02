@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import { BrowserRouter, NavLink, Link, Routes, Route } from "react-router-dom";
 // import CreateElement from "./component/React.createElement로컴포넌트만들기";
 // import FuncProps from "./component/Props&State";
 // import ClassProps from "./component/Props&State";
@@ -16,11 +16,39 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Link to="/home">Home</Link>
-        <Link to="/about">About</Link>
+        {/* <Link to="/home">Home</Link> */}
+        <NavLink
+          to="/home"
+          style={({ isActive }) => ({ color: isActive ? "green" : "red" })}
+          className={({ isActive }) => (isActive ? "actived" : "")}
+        >
+          home
+        </NavLink>
+        {/* <Link to="/about">About</Link> */}
+        <NavLink
+          to="/about"
+          style={({ isActive }) => ({ color: isActive ? "green" : "red" })}
+          className={({ isActive }) => (isActive ? "actived" : "")}
+        >
+          about
+        </NavLink>
         {/* id값을 특정변수로 넣기 */}
-        <Link to={`/home/${id}`}>home2</Link>
-        <Link to="/home/40">home3</Link>
+        {/* <Link to={`/home/${id}`}>home2</Link> */}
+        <NavLink
+          to={`/home/${id}`}
+          style={({ isActive }) => ({ color: isActive ? "green" : "red" })}
+          className={({ isActive }) => (isActive ? "actived" : "")}
+        >
+          home30
+        </NavLink>
+        {/* <Link to="/home/40">home3</Link> */}
+        <NavLink
+          to="/home/40"
+          style={({ isActive }) => ({ color: isActive ? "green" : "red" })}
+          className={({ isActive }) => (isActive ? "actived" : "")}
+        >
+          home40
+        </NavLink>
 
         <Routes>
           <Route path="/home" element={<Home />} />
