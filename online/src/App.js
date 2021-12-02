@@ -1,6 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter, NavLink, Link, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  NavLink,
+  Link,
+  Navigate,
+  Routes,
+  Route,
+} from "react-router-dom";
 // import CreateElement from "./component/React.createElement로컴포넌트만들기";
 // import FuncProps from "./component/Props&State";
 // import ClassProps from "./component/Props&State";
@@ -13,6 +20,7 @@ import About from "./component/C3Router/About";
 import NotFound from "./component/C3Router/NotFound";
 function App() {
   const id = 30;
+  const isHome = true;
   return (
     <>
       <BrowserRouter>
@@ -51,7 +59,10 @@ function App() {
         </NavLink>
 
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route
+            path="/home"
+            element={isHome ? <Navigate to="/about" /> : <Home />}
+          />
           {/* 동적 라우팅 */}
           <Route path="/home/:id" element={<Home />} />
           <Route path="/about" element={<About />} />
