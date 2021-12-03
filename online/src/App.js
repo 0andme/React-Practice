@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
-import "./App.css";
+// import "./App.css";
+import styles from "./App.module.css";
 import {
   BrowserRouter,
   NavLink,
@@ -21,8 +22,13 @@ import NotFound from "./component/C3Router/NotFound";
 function App() {
   const id = 30;
   const isHome = true;
+  const isApp = true;
   return (
-    <>
+    <div
+      className={
+        isApp ? `${styles.App} ${styles["App-green"]}` : styles["App-green"]
+      }
+    >
       <BrowserRouter>
         {/* <Link to="/home">Home</Link> */}
         <NavLink
@@ -69,7 +75,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
     // <div className="App">
     //   {/* <CreateElement /> */}
     //   {/* <FuncProps msg={"propsmsg"} /> */}
