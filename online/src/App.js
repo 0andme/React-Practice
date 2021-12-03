@@ -9,6 +9,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+// import classNames from "classnames";
+import classNames from "classnames/bind";
+
 // import CreateElement from "./component/React.createElement로컴포넌트만들기";
 // import FuncProps from "./component/Props&State";
 // import ClassProps from "./component/Props&State";
@@ -23,12 +26,18 @@ function App() {
   const id = 30;
   const isHome = true;
   const isApp = true;
+  console.log(styles);
+  // console.log(classNames("foo"));
+  // console.log(classNames({ foo: false, bar: true }));
+  // console.log(classNames({ foo: false, bar: false }));
+  // console.log(
+  //   classNames(null, false, "bar", undefined, 0, 1, { barNull: null }, "")
+  // );
+  const cx = classNames.bind(styles);
+
   return (
-    <div
-      className={
-        isApp ? `${styles.App} ${styles["App-green"]}` : styles["App-green"]
-      }
-    >
+    // <div className={classNames(styles.App, { "App-green": isApp })}>
+    <div className={cx("App", { "App-green": isApp })}>
       <BrowserRouter>
         {/* <Link to="/home">Home</Link> */}
         <NavLink
