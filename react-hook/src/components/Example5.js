@@ -14,7 +14,10 @@ function Example5() {
     console.log("Mount & update by count", count);
   }, [count]);
   //
-
+  useEffect(() => {
+    console.log("Mount", count);
+    return () => {};
+  }, []);
   return (
     <div>
       <p>click cnt : {count}</p>
